@@ -1,0 +1,77 @@
+title = "Flat theme"
+theme = "hugo-theme-flat"
+themesDir = "../.."
+hasCJKLanguage = true
+paginate = 6
+baseURL = ""
+
+# these values are hugo built in markup config
+[markup.highlight]
+anchorLineNos = false
+codeFences = true
+guessSyntax = false
+hl_Lines = ''
+lineAnchors = ''
+lineNoStart = 1
+lineNos = false
+lineNumbersInTable = false
+noClasses = false
+noHl = false
+style = 'monokailight'
+tabWidth = 4
+
+## uncomment belows and set proper values to enable remark42
+# [params.remark42]
+# host=''
+# site_id=''
+# max_shown_comments=100
+# theme='light'
+# locale='en'
+# show_email_subscription=false
+# simple_view=true
+
+
+# you can set multi row of footers like these
+[[params.footer_rows]]
+[[params.footer_rows.items]]
+name = "hugo theme flat demo site"
+url = "#"
+
+[[params.footer_rows]]
+[[params.footer_rows.items]]
+name = "Creative Commons Attribution 4.0 International"
+url = "https://creativecommons.org/licenses/by/4.0/"
+pre = "Copyright <a href=\"https://creativecommons.org/licenses/by/4.0/\">CC BY-4.0</a>"
+
+[[params.footer_rows]]
+[[params.footer_rows.items]]
+name = "Hugo"
+url = "https://gohugo.io"
+pre = "Powered by <a href=\"https://gohugo.io\">Hugo</a>"
+[[params.footer_rows.items]]
+name = "theme flat"
+url = "https://cgit.leafee98.com/hugo-theme-flat.git"
+pre = "Theme <a href=\"https://cgit.leafee98.com/hugo-theme-flat.git\">hugo-theme-flat</a>"
+
+
+[[menus.main]]
+name = "Archives"
+url = "/posts/"
+weight = 30
+[[menus.main]]
+pageref = "about"
+name = "About"
+weight = 80
+
+# 2-level sub menus are supported
+[[menus.main]]
+name = "Services"
+weight = 60
+[[menus.main]]
+parent = "Services"
+name = "Service A"
+url = "#"
+[[menus.main]]
+parent = "Services"
+name = "Service B"
+url = "#"
