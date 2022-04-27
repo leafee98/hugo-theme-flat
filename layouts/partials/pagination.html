@@ -1,0 +1,31 @@
+{{ $pag := $.Paginator }}
+
+<nav class="pagination">
+
+    {{ $size := 2 }}
+    {{ $current := $pag.PageNumber}}
+    {{ $total := $pag.TotalPages}}
+    {{ $prev := 0 }}
+    {{ range $pag.Pagers }}
+        {{ if or ( and ( ge .PageNumber (sub $current $size) )
+                       ( le .PageNumber (add $current $size) )
+                 ) 
+                 (or (eq .PageNumber 1)
+                     (eq .PageNumber $total)
+                 )
+        }}
+            {{ if not (eq .PageNumber (add $prev 1) ) }}
+                <span>··</span>
+            {{ end }}
+            {{ $prev = .PageNumber }}
+
+            {{ if eq .PageNumber $current }}
+                <a class="enabled current" href="{{ .URL }}">{{ .PageNumber }}</a>
+            {{ else }}
+                <a class="enabled" href="{{ .URL }}">{{ .PageNumber }}</a>
+            {{ end }}
+
+        {{ end }}
+    {{ end }}
+
+</nav>

@@ -1,0 +1,12 @@
+<div class="side-categories">
+    <h2>Categories</h2>
+    <hr />
+
+    <ul>
+        {{ range $key, $_ := .Site.Taxonomies.categories }}
+            <li>
+                <a href="{{ "/categories/" }}{{ $key | urlize }}">{{ $key }}({{ .Count }})</a>
+            </li>
+        {{ end }}
+    </ul>
+</div>

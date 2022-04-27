@@ -1,0 +1,12 @@
+<div class="side-recent">
+    <h2 class="side-title">Recent Posts</h2>
+    <hr />
+
+    <ul>
+        {{ range first 5 (where .Site.RegularPages ".Type" "in" .Site.Params.MainSections).ByDate.Reverse }}
+            <li>
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </li>
+        {{ end }}
+    </ul>
+</div>

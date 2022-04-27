@@ -1,0 +1,32 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+
+{{/* load mermaid if any mermaid code block */}}
+{{ if .Page.Store.Get "hasMermaid" }}
+<script src="{{ "/js/meraid-9.0.0.min.js" | absURL }}"></script>
+<script>
+    mermaid.initialize({ startOnLoad: true });
+</script>
+{{ end }}
+
+{{ with .Site.Params.remark42 }}
+    <script>
+        var remark_config = {
+            host: '{{ .host }}',
+            site_id: '{{ .host }}',
+            components: ['embed', 'last-comments'],
+            max_shown_comments: {{ .max_shown_comments }},
+            theme: '{{ .remark42.theme }}',
+            page_title: '{{ .Title }}',
+            locale: '{{ .locale }}',
+            show_email_subscription: {{ .show_email_subscription }},
+            simple_view: {{ .simple_view }}
+        };
+
+        !function(e,n){for(var o=0;o<e.length;o++){var r=n.createElement("script"),c=".js",d=n.head||n.body;"noModule"in r?(r.type="module",c=".mjs"):r.async=!0,r.defer=!0,r.src=remark_config.host+"/web/"+e[o]+c,d.appendChild(r)}}(remark_config.components||["embed"],document);
+    </script>
+{{ end }}
+
+<link rel="stylesheet" href="{{ "css/syntax.css" | relURL }}" />
+<link rel="stylesheet" href="{{ "/css/style.css" | relURL }}" />
+<link rel="shortcut icon" href="{{ "/images/favicon.ico" | relURL }}" type="image/x-icon" />

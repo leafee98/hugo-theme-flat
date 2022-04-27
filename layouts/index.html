@@ -1,0 +1,42 @@
+{{ define "main" }}
+
+<div class="max-wrapper">
+    <div id="list-page">
+        {{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+        {{ $paginator := .Paginate $pages }}
+        {{ range $paginator.Pages }}
+            <section class="list-item">
+                <h1 class="title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+
+                <div class="tips">
+                    <div class="date">
+                        <time datetime="{{ .PublishDate }}">{{ .PublishDate.Format "2006/01/02" }}</time>
+                    </div>
+
+                    {{ with .Params.Categories }}
+                        <div class="categories">
+                            <span>Categories:</span>
+                            {{ range first 2 . }}
+                                <a href="{{ "/categories/" | absURL }}{{ . | urlize }}">{{ . }}</a>
+                            {{ end }}
+                        </div>
+                    {{ end }}
+
+                    {{ with .Params.Tags }}
+                        <div class="tags">
+                            <span>Tags:</span>
+                            {{ range first 5 . }}
+                                <a href="{{ "/tags/" | absURL }}{{ . | urlize }}">{{ . }}</a>
+                            {{ end }}
+                        </div>
+                    {{ end }}
+                </div>
+
+                <div class="summary">{{ .Summary }}</div>
+            </section>
+        {{ end }}
+
+    </div>
+    {{ partial "pagination.html" . }}
+</div>
+{{ end }}

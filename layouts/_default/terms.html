@@ -1,0 +1,14 @@
+{{ define "main" }}
+    <section id="tags">
+        {{ $data := .Data }}
+        {{ range $key, $value := .Data.Terms.ByCount }}
+            {{ if $value.Name}}
+                <span class="tag">
+                    <a href="{{ $value.Name | urlize }}">
+                        {{ $value.Name }} <span>({{ $value.Count }})</span>
+                    </a>
+                </span>
+            {{ end }}
+        {{ end }}
+    </section>
+{{ end }}

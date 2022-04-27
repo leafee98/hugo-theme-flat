@@ -1,0 +1,13 @@
+<footer class="footer">
+    {{ range .Site.Params.footer_rows }}
+        <div class="footer-row">
+            {{ range .items }}
+                {{ with .pre }}
+                    <span class="footer-item">{{ . | safeHTML }}</span>
+                {{ else }}
+                    <a href="{{ .url }}">{{ .name }}</a>
+                {{ end }}
+            {{ end }}
+        </div>
+    {{ end }}
+</footer>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{ with .Params.Title }}{{ . }} | {{ end }}{{ .Site.Title }}</title>
+        {{ partial "head.html" . }}
+    </head>
+
+    <body>
+        {{ partial "header.html" . }}
+        <main class="main-wrapper">
+            <div class="main">
+                {{ block "main" . }}{{ end }}
+            </div>
+            <div class="side">
+                {{ partial "side-recent.html" . }}
+                {{ partial "side-categories.html" . }}
+                {{ partial "side-tags.html" . }}
+            </div>
+        </main>
+        {{ partial "footer.html" . }}
+    </body>
+</html>
