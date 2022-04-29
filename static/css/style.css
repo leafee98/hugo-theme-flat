@@ -393,6 +393,9 @@ body {
   word-wrap: break-word;
 }
 
+/* keep in style with highlighting */
+.content pre { padding: 7px; }
+
 .content pre code {
   font-family: var(--fonts-mono);
 
@@ -626,3 +629,10 @@ body {
 .commenting {
   width: 85%;
 }
+
+/* keep content style from being affected by remark42 style */
+.content pre {
+  background-color: transparent;
+  color: var(--color-black-3)
+}
+
