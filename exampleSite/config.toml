@@ -1,6 +1,7 @@
 title = "Flat theme"
 theme = "hugo-theme-flat"
 themesDir = "../.."
+enableRobotsTXT = true
 hasCJKLanguage = true
 paginate = 6
 baseURL = ""
