@@ -1,11 +1,21 @@
 <footer class="footer">
+    <div class="footer-row">
+        {{ if .IsHome }}
+            <a class="footer-item" href="/index.xml">The Site Feed</a>
+        {{ else }}
+            <a class="footer-item" href="/index.xml">The Site Feed</a>
+            {{ with .OutputFormats.Get "rss" }}
+                <a class="footer-item" href="{{ .Permalink }}">The Taxonomy Feed</a>
+            {{ end }}
+        {{ end }}
+    </div>
     {{ range .Site.Params.footer_rows }}
         <div class="footer-row">
             {{ range .items }}
                 {{ with .pre }}
                     <span class="footer-item">{{ . | safeHTML }}</span>
                 {{ else }}
-                    <a href="{{ .url }}">{{ .name }}</a>
+                    <a class="footer-item" href="{{ .url }}">{{ .name }}</a>
                 {{ end }}
             {{ end }}
         </div>
