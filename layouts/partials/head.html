@@ -7,7 +7,7 @@
 
 {{/* load mermaid if any mermaid code block */}}
 {{ if .Page.Store.Get "hasMermaid" }}
-    <script src="{{ "/js/meraid-9.0.0.min.js" | absURL }}"></script>
+    <script src="{{ "/js/meraid-9.0.0.min.js" | relURL }}"></script>
     <script>mermaid.initialize({ startOnLoad: true });</script>
 {{ end }}
 

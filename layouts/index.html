@@ -17,7 +17,7 @@
                         <div class="categories">
                             <span>Categories:</span>
                             {{ range first 2 . }}
-                                <a href="{{ "/categories/" | absURL }}{{ . | urlize }}">{{ . }}</a>
+                                <a href="{{ "/categories/" | relURL }}{{ . | urlize }}">{{ . }}</a>
                             {{ end }}
                         </div>
                     {{ end }}
@@ -26,7 +26,7 @@
                         <div class="tags">
                             <span>Tags:</span>
                             {{ range first 5 . }}
-                                <a href="{{ "/tags/" | absURL }}{{ . | urlize }}">{{ . }}</a>
+                                <a href="{{ "/tags/" | relURL }}{{ . | urlize }}">{{ . }}</a>
                             {{ end }}
                         </div>
                     {{ end }}
