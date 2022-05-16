@@ -1,11 +1,20 @@
 <footer class="footer">
     <div class="footer-row">
         {{ if .IsHome }}
-            <a class="footer-item" href="/index.xml">The Site Feed</a>
+        <a class="footer-item" href="{{ "/index.xml" | relURL }}">
+            The Site Feed
+            <i class="icofont-rss"></i>
+        </a>
         {{ else }}
-            <a class="footer-item" href="/index.xml">The Site Feed</a>
+            <a class="footer-item" href="{{ "/index.xml" | relURL }}">
+                The Site Feed
+                <i class="icofont-rss"></i>
+            </a>
             {{ with .OutputFormats.Get "rss" }}
-                <a class="footer-item" href="{{ .Permalink }}">The Taxonomy Feed</a>
+                <a class="footer-item" href="{{ .Permalink }}">
+                    The Taxonomy Feed
+                    <i class="icofont-rss"></i>
+                </a>
             {{ end }}
         {{ end }}
     </div>

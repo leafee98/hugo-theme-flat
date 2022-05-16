@@ -259,6 +259,12 @@ body {
 .footer a       { color: var(--color-fav-2); text-decoration: none; }
 .footer a:hover { color: var(--color-fav-3); }
 
+.footer img {
+    display: inline;
+    height: var(--font-size-1);
+    color: var(--color-fav-2);
+}
+
 
 /**********************************/
 /* set up home page's list layout */
@@ -479,8 +485,8 @@ body {
 .content .markdown-image img {
   max-width: 100%;
 }
-.content .anchor { 
-  visibility: hidden; 
+.content .anchor {
+  visibility: hidden;
   color: var(--color-fav-2);
 }
 .content h1:hover a,

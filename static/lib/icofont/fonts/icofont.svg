@@ -1,0 +1,11 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<defs>
+<font id="icofont" horiz-adv-x="1000" >
+<font-face font-family="IcoFont" font-weight="400" font-style="Regular" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="rss" horiz-adv-x="1000" unicode="&#xed64;" d="M64 323c109 0 212-43 288-120 77-78 120-181 120-290h168c0 318-258 577-576 577l0-167z m1 297c388 0 703-317 703-707h168c0 482-391 875-871 875l0-168z m232-590c0-65-52-117-117-117-64 0-116 52-116 117s52 116 116 116c65 0 117-52 117-116z" />
+</font>
+</defs>
+</svg>
