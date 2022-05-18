@@ -7,10 +7,10 @@
 
         {{ if gt (len .Site.Sections) 1 }}
             {{ range .Site.Sections }}
-                {{ $page := . }}
+                {{ $section := . }}
                 {{ with .OutputFormats.Get "rss" }}
                     <a class="footer-item" href="{{ .Permalink }}">
-                        Feed of {{ with $page.Title }}{{ $page.Title }}{{ end }}
+                        Feed of {{ $section.Section | humanize }}
                         <i class="icofont-rss"></i>
                     </a>
                 {{ end }}
@@ -18,10 +18,10 @@
         {{ end }}
 
         {{ if not (or .IsHome .IsSection) }}
-            {{ $page := . }}
+            {{ $section := . }}
             {{ with .OutputFormats.Get "rss" }}
                 <a class="footer-item" href="{{ .Permalink }}">
-                    Feed of "{{ with $page.Title }}{{ $page.Title }}{{ end }}"
+                    Feed of {{ $section.Section | humanize }}
                     <i class="icofont-rss"></i>
                 </a>
             {{ end }}
