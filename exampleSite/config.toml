@@ -51,9 +51,15 @@ pre = "Theme <a href=\"https://cgit.leafee98.com/hugo-theme-flat.git\">hugo-them
 
 
 [[menus.main]]
-name = "Archives"
+name = "Posts"
 url = "/posts/"
 weight = 30
+
+[[menus.main]]
+name = "Essays"
+url = "/essays/"
+weight = 40
+
 [[menus.main]]
 pageref = "about"
 name = "About"

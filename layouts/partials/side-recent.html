@@ -1,9 +1,9 @@
 <div class="side-recent">
-    <h2 class="side-title">Recent Posts</h2>
+    <h2 class="side-title">Recent {{ .Section | humanize }}</h2>
     <hr />
 
     <ul>
-        {{ range first 5 (where .Site.RegularPages ".Type" "in" .Site.Params.MainSections).ByDate.Reverse }}
+        {{ range first 5 .RegularPages.ByDate.Reverse }}
             <li>
                 <a href="{{ .RelPermalink }}">{{ .Title }}</a>
             </li>

@@ -12,7 +12,9 @@
                 {{ block "main" . }}{{ end }}
             </div>
             <div class="side">
-                {{ partial "side-recent.html" . }}
+                {{ range .Site.Sections }}
+                    {{ partial "side-recent.html" . }}
+                {{ end }}
                 {{ partial "side-categories.html" . }}
                 {{ partial "side-tags.html" . }}
             </div>
