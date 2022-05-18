@@ -1,33 +1,39 @@
 {{ define "main" }}
 
-<section id="archive">
-    {{ range .Data.Pages.GroupByDate "2006" }}
-        <div class="group">
-            <h3 class="key">
-                {{ .Key }}
-            </h3>
-
-            {{ range .Pages }}
-                <div class="value">
-                    <time class="date" datetime="{{ .PublishDate }}">{{ .PublishDate.Format "01/02" }}</time>
-
-                    <div class="title">
-
-                        <a href="{{ .Permalink }}">{{ .Title }}</a>
-
-                        {{ with .Params.tags }}
-                            {{ range . }}
-                                <a class="tags" href="{{ "/tags/" | relURL }}{{ . | urlize }}">{{ . }}</a>
-                            {{ end }}
-                        {{ end }}
-
-                    </div>
-                </div>
-            {{ end }}
-
-        </div>
+<div>
+    {{ if trim .Content " \n" }}
+        <div class="content archive-hint">{{ .Content }}</div>
     {{ end }}
 
-</section>
+    <section id="archive">
+        {{ range .Data.Pages.GroupByDate "2006" }}
+            <div class="group">
+                <h3 class="key">
+                    {{ .Key }}
+                </h3>
+
+                {{ range .Pages }}
+                    <div class="value">
+                        <time class="date" datetime="{{ .PublishDate }}">{{ .PublishDate.Format "01/02" }}</time>
+
+                        <div class="title">
+
+                            <a href="{{ .Permalink }}">{{ .Title }}</a>
+
+                            {{ with .Params.tags }}
+                                {{ range . }}
+                                    <a class="tags" href="{{ "/tags/" | relURL }}{{ . | urlize }}">{{ . }}</a>
+                                {{ end }}
+                            {{ end }}
+
+                        </div>
+                    </div>
+                {{ end }}
+
+            </div>
+        {{ end }}
+
+    </section>
+</div>
 
 {{ end }}

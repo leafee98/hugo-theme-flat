@@ -1,8 +1,8 @@
 :root {
   --fonts-sans-serif: Roboto, Helvetica, Tahoma, Arial,
                       "DejaVu Sans", "Liberation Sans",
-                      
-                      "WenQuanYi Zen Hei", "WenQuanYi Micro Hei", 
+
+                      "WenQuanYi Zen Hei", "WenQuanYi Micro Hei",
                       "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
                       "Noto Sans CJK",
                       sans-serif;
@@ -105,7 +105,7 @@ body {
 .main,
 .side-recent,
 .side-categories,
-.side-tags 
+.side-tags
 { background-color: var(--color-light-5); }
 
 /* place header in the center of header-wrapper */
@@ -120,12 +120,6 @@ body {
   margin-bottom: 0;
 }
 
-.max-wrapper {
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-}
 
 /********** set up break point **********/
 
@@ -142,13 +136,13 @@ body {
 .header-wrapper, .footer { width: 100vw;}
 .main-wrapper { width: calc(100vw - 2 * var(--len-3));}
 
-
 /************************/
 /* set up header layout */
 /************************/
 
 .header {
-  padding: var(--len-3); 
+  padding: var(--len-3);
+  width: 100%;
 }
 
 /* place title and menus horizonally */
@@ -238,7 +232,7 @@ body {
 /************************/
 
 .footer {
-  padding: var(--len-4) 0; 
+  padding: var(--len-4) 0;
   font-size: var(--font-size-1);
 }
 
@@ -264,7 +258,6 @@ body {
     height: var(--font-size-1);
     color: var(--color-fav-2);
 }
-
 
 /**********************************/
 /* set up home page's list layout */
@@ -356,12 +349,12 @@ body {
 
 .single .taxonomies { margin-top: var(--len-1); }
 
-.single > hr { 
+.single > hr {
   border: none;
   background-color: var(--color-fav-1);
   height: 1px;
 
-  width: 90%; 
+  width: 90%;
   margin: var(--len-3) 0;
 }
 
@@ -505,16 +498,16 @@ body {
   overflow-x: auto;
 }
 
-/********************************/
-/* setup taxonomies page layout */
-/********************************/
+/**************************/
+/* setup list page layout */
+/**************************/
 
 #archive {
   padding-left: var(--len-3);
 }
 
 #archive .group {
-  margin: var(--len-4) auto; 
+  margin: var(--len-4) auto;
 }
 #archive .group .key {
   font-size: var(--font-size-4);
@@ -642,3 +635,18 @@ body {
   color: var(--color-black-3)
 }
 
+/**********/
+/** misc **/
+/**********/
+
+.archive-hint {
+  padding-left: var(--len-4);
+  color: var(--color-fav-1);
+}
+
+.max-wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
