@@ -21,6 +21,9 @@ noHl = false
 style = 'monokailight'
 tabWidth = 4
 
+[params]
+mainSections = ['posts']
+
 ## uncomment belows and set proper values to enable remark42
 # [params.remark42]
 # host=''

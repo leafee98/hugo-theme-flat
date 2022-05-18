@@ -1,23 +1,6 @@
 <footer class="footer">
     <div class="footer-row">
-        <a class="footer-item" href="{{ "/index.xml" | relURL }}">
-            Feed of ALL
-            <i class="icofont-rss"></i>
-        </a>
-
-        {{ if gt (len .Site.Sections) 1 }}
-            {{ range .Site.Sections }}
-                {{ $section := . }}
-                {{ with .OutputFormats.Get "rss" }}
-                    <a class="footer-item" href="{{ .Permalink }}">
-                        Feed of {{ $section.Section | humanize }}
-                        <i class="icofont-rss"></i>
-                    </a>
-                {{ end }}
-            {{ end }}
-        {{ end }}
-
-        {{ if not (or .IsHome .IsSection) }}
+        {{ range .Site.Sections }}
             {{ $section := . }}
             {{ with .OutputFormats.Get "rss" }}
                 <a class="footer-item" href="{{ .Permalink }}">
@@ -26,7 +9,18 @@
                 </a>
             {{ end }}
         {{ end }}
+
+        {{ if not (or .IsHome .IsSection) }}
+            {{ $term := . }}
+            {{ with .OutputFormats.Get "rss" }}
+                <a class="footer-item" href="{{ .Permalink }}">
+                    Feed of "{{ $term.Title }}"
+                    <i class="icofont-rss"></i>
+                </a>
+            {{ end }}
+        {{ end }}
     </div>
+
     {{ range .Site.Params.footer_rows }}
         <div class="footer-row">
             {{ range .items }}
