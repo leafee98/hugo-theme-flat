@@ -12,17 +12,18 @@
 {{ end }}
 
 {{ with and .Site.Params.remark42 .Params.show_comments }}
+    {{ $remark42 := $.Site.Params.remark42 }}
     <script>
         var remark_config = {
-            host: '{{ .host }}',
-            site_id: '{{ .host }}',
+            host: '{{ $remark42.host }}',
+            site_id: '{{ $remark42.host }}',
             components: ['embed', 'last-comments'],
-            max_shown_comments: {{ .max_shown_comments }},
-            theme: '{{ .remark42.theme }}',
-            page_title: '{{ .Title }}',
-            locale: '{{ .locale }}',
-            show_email_subscription: {{ .show_email_subscription }},
-            simple_view: {{ .simple_view }}
+            max_shown_comments: {{ $remark42.max_shown_comments }},
+            theme: '{{ $remark42.theme }}',
+            page_title: '{{ $remark42.Title }}',
+            locale: '{{ $remark42.locale }}',
+            show_email_subscription: {{ $remark42.show_email_subscription }},
+            simple_view: {{ $remark42.simple_view }}
         };
 
         !function(e,n){for(var o=0;o<e.length;o++){var r=n.createElement("script"),c=".js",d=n.head||n.body;"noModule"in r?(r.type="module",c=".mjs"):r.async=!0,r.defer=!0,r.src=remark_config.host+"/web/"+e[o]+c,d.appendChild(r)}}(remark_config.components||["embed"],document);
