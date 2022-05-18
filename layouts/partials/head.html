@@ -11,7 +11,7 @@
     <script>mermaid.initialize({ startOnLoad: true });</script>
 {{ end }}
 
-{{ with .Site.Params.remark42 }}
+{{ with and .Site.Params.remark42 .Params.show_comments }}
     <script>
         var remark_config = {
             host: '{{ .host }}',

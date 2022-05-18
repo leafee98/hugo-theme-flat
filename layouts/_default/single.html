@@ -39,9 +39,8 @@
         {{ .Content }}
     </div>
 
-    {{ if in .Site.Params.mainSections .Type }}
+    {{ with and .Site.Params.remark42 .Params.show_comments }}
         <hr />
-
         {{ partial "comment.html" . }}
     {{ end }}
 </section>
