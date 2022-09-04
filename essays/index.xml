@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Essays on Flat theme</title>
-    <link>/essays/</link>
+    <link>https://leafee98.github.io/hugo-theme-flat/essays/</link>
     <description>Recent content in Essays on Flat theme</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 18 May 2022 11:19:08 +0800</lastBuildDate><atom:link href="/essays/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 18 May 2022 11:19:08 +0800</lastBuildDate><atom:link href="https://leafee98.github.io/hugo-theme-flat/essays/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What Is Hugo</title>
-      <link>/essays/what-is-hugo/</link>
+      <link>https://leafee98.github.io/hugo-theme-flat/essays/what-is-hugo/</link>
       <pubDate>Mon, 16 May 2022 21:57:50 +0800</pubDate>
       
-      <guid>/essays/what-is-hugo/</guid>
+      <guid>https://leafee98.github.io/hugo-theme-flat/essays/what-is-hugo/</guid>
       <description>&lt;p&gt;Hugo is a static site generator written in Go. Originally created by Steve Francia in 2013, Hugo has seen a great increase in both features and performance thanks to current lead developer Bjørn Erik Pedersen (since v0.14 in 2015[4]) and other contributors. Hugo is an open source project licensed under the Apache License 2.0.[5]&lt;/p&gt;
 &lt;p&gt;Being able to generate most websites within seconds (at &amp;lt; 1 ms per page), Hugo&amp;rsquo;s official website states it is &amp;ldquo;the world’s fastest framework for building websites&amp;rdquo;. In July 2015, Netlify began providing Hugo hosting,[6] and in 2017, Smashing Magazine completed its redesign of their website, migrating from WordPress to a JAMstack solution with Hugo.[7]&lt;/p&gt;
 &lt;blockquote&gt;

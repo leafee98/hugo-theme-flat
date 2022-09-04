@@ -2,58 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/posts/</loc>
+    <loc>https://leafee98.github.io/hugo-theme-flat/posts/</loc>
     <lastmod>2022-05-18T11:22:44+08:00</lastmod>
   </url><url>
-    <loc>/essays/</loc>
+    <loc>https://leafee98.github.io/hugo-theme-flat/essays/</loc>
     <lastmod>2022-05-18T11:19:08+08:00</lastmod>
   </url><url>
-    <loc>/</loc>
+    <loc>https://leafee98.github.io/hugo-theme-flat/</loc>
     <lastmod>2022-05-18T11:22:44+08:00</lastmod>
   </url><url>
-    <loc>/essays/what-is-hugo/</loc>
+    <loc>https://leafee98.github.io/hugo-theme-flat/essays/what-is-hugo/</loc>
     <lastmod>2022-05-16T21:57:50+08:00</lastmod>
   </url><url>
-    <loc>/about/</loc>
+    <loc>https://leafee98.github.io/hugo-theme-flat/about/</loc>
     <lastmod>2022-04-27T21:01:43+08:00</lastmod>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>https://leafee98.github.io/hugo-theme-flat/categories/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/css/</loc>
+    <loc>https://leafee98.github.io/hugo-theme-flat/tags/css/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/html/</loc>
+    <loc>https://leafee98.github.io/hugo-theme-flat/tags/html/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/markdown/</loc>
+    <loc>https://leafee98.github.io/hugo-theme-flat/tags/markdown/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/markdown-syntax/</loc>
+    <loc>https://leafee98.github.io/hugo-theme-flat/posts/markdown-syntax/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/syntax/</loc>
+    <loc>https://leafee98.github.io/hugo-theme-flat/categories/syntax/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>https://leafee98.github.io/hugo-theme-flat/tags/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/themes/</loc>
+    <loc>https://leafee98.github.io/hugo-theme-flat/categories/themes/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/placeholder-text/</loc>
+    <loc>https://leafee98.github.io/hugo-theme-flat/posts/placeholder-text/</loc>
     <lastmod>2019-03-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/text/</loc>
+    <loc>https://leafee98.github.io/hugo-theme-flat/tags/text/</loc>
     <lastmod>2019-03-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/math-typesetting/</loc>
+    <loc>https://leafee98.github.io/hugo-theme-flat/posts/math-typesetting/</loc>
     <lastmod>2019-03-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/emoji/</loc>
+    <loc>https://leafee98.github.io/hugo-theme-flat/tags/emoji/</loc>
     <lastmod>2019-03-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/emoji-support/</loc>
+    <loc>https://leafee98.github.io/hugo-theme-flat/posts/emoji-support/</loc>
     <lastmod>2019-03-05T00:00:00+00:00</lastmod>
   </url>
 </urlset>
