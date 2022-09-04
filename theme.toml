@@ -1,0 +1,29 @@
+name = "Flat"
+license = "MIT"
+licenselink = "Link to theme's license"
+description = "A theme with light color and multi-section support"
+
+# The home page of the theme, where the source can be found.
+homepage = "https://github.com/leafee98/hugo-theme-flat"
+
+# If you have a running demo of the theme.
+demosite = "https://leafee98.github.io/hugo-theme-flat/"
+
+tags = ["blog", "personal", "light"]
+features = []
+
+# If the theme has multiple authors
+#authors = [
+#  {name = "", homepage = ""},
+#]
+
+# If the theme has a single author
+[author]
+    name = "leafee98"
+    homepage = "https://leafee98.com"
+
+# If porting an existing theme
+#[original]
+#    author = "Name of original author"
+#    homepage = "His/Her website"
+#    repo = "Link to source code of original theme"
