@@ -7,7 +7,7 @@
 
 {{/* load mermaid if any mermaid code block */}}
 {{ if .Page.Store.Get "hasMermaid" }}
-    <script src="{{ "/js/meraid-9.0.0.min.js" | relURL }}"></script>
+    <script src="{{ "js/meraid-9.0.0.min.js" | relURL }}"></script>
     <script>mermaid.initialize({ startOnLoad: true });</script>
 {{ end }}
 
@@ -30,7 +30,7 @@
     </script>
 {{ end }}
 
-<link rel="stylesheet" href="{{ "/lib/icofont/icofont.min.css" | relURL }}" />
-<link rel="stylesheet" href="{{ "/css/syntax.css" | relURL }}" />
-<link rel="stylesheet" href="{{ "/css/style.css" | relURL }}" />
-<link rel="shortcut icon" href="{{ "/images/favicon.ico" | relURL }}" type="image/x-icon" />
+<link rel="stylesheet" href="{{ "lib/icofont/icofont.min.css" | relURL }}" />
+<link rel="stylesheet" href="{{ "css/syntax.css" | relURL }}" />
+<link rel="stylesheet" href="{{ "css/style.css" | relURL }}" />
+<link rel="shortcut icon" href="{{ "images/favicon.ico" | relURL }}" type="image/x-icon" />

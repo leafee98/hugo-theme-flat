@@ -5,7 +5,7 @@
     <ul>
         {{ range .Site.Taxonomies.tags.Alphabetical }}
             <li>
-                <a href="{{ "/tags/" | relURL }}{{ .Name | urlize }}">{{ .Name }} ({{ .Count }})</a>
+                <a href="{{ "tags/" | relURL }}{{ .Name | urlize }}">{{ .Name }} ({{ .Count }})</a>
             </li>
         {{ end }}
     </ul>

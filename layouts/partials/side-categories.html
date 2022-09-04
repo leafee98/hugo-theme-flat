@@ -5,7 +5,7 @@
     <ul>
         {{ range $key, $_ := .Site.Taxonomies.categories }}
             <li>
-                <a href="{{ "/categories/" | relURL }}{{ $key | urlize }}">{{ $key }}({{ .Count }})</a>
+                <a href="{{ "categories/" | relURL }}{{ $key | urlize }}">{{ $key }}({{ .Count }})</a>
             </li>
         {{ end }}
     </ul>
