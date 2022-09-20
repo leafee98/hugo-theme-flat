@@ -11,6 +11,18 @@
     <script>mermaid.initialize({ startOnLoad: true });</script>
 {{ end }}
 
+{{/* load katex if enabled on front matter */}}
+{{ if .Params.katex }}
+    <link rel="stylesheet" href="{{ "lib/katex/katex.min.css" | relURL }}">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="{{ "lib/katex/katex.min.js" | relURL }}"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="{{ "lib/katex/contrib/auto-render.min.js" | relURL }}"
+        onload="renderMathInElement(document.body);"></script>
+{{ end }}
+
 {{ with and .Site.Params.remark42 .Params.show_comments }}
     {{ $remark42 := $.Site.Params.remark42 }}
     <script>
