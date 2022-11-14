@@ -50,7 +50,7 @@ jobs:
           HUGO_ENV: production
         run: |
           hugo \
-            --source ./exampleSite
+            --source ./exampleSite \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
       - name: Upload artifact
