@@ -380,6 +380,10 @@ body {
 
 /***** set up content style *****/
 
+.content {
+    line-height: 1.5;
+}
+
 .content code {
   font-family: var(--fonts-mono);
 
