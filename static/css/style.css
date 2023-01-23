@@ -432,19 +432,22 @@ body {
   line-height: 1.5em;
 }
 
-.content th, td {
+.content th,
+.content td {
   text-align: left;
   padding-right: 20px;
   vertical-align: top;
 }
 
-.content table td, td {
+.content table td,
+.content table td {
   border-spacing: none;
   border-style: solid;
   padding: 10px 15px;
   border-width: 1px 0 0 0;
 }
-.content thead th, th {
+.content thead th,
+.content thead th {
   text-align: left;
   padding: 10px 15px;
   height: 20px;
