@@ -380,7 +380,7 @@ body {
 
 /***** set up content style *****/
 
-.content p code {
+.content code {
   font-family: var(--fonts-mono);
 
   background-color: var(--color-light-4);
@@ -396,13 +396,11 @@ body {
 .content pre { padding: 7px; }
 
 .content pre code {
-  font-family: var(--fonts-mono);
-
-  display: inline-block;
+  display: block;
 
   padding: var(--len-3);
 
-  background-color: var(--color-light-4);
+  border: none;
   border-radius: 3px;
 
   overflow: auto;
