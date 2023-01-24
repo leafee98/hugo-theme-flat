@@ -1,21 +1,16 @@
 :root {
-  --fonts-sans-serif: Roboto, Helvetica, Tahoma, Arial,
-                      "DejaVu Sans", "Liberation Sans",
+  --fonts-sans-en: "Noto Sans", "Droid Sans", "Calibri", "Arial";
+  --fonts-sans-zh: "WenQuanYi Zen Hei", "WenQuanYi Micro Hei",
+                   "Noto Sans CJK", "Microsoft YaHei", "PingFang SC";
+  --fonts-sans: var(--fonts-sans-en), var(--fonts-sans-zh), sans-serif;
 
-                      "WenQuanYi Zen Hei", "WenQuanYi Micro Hei",
-                      "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
-                      "Noto Sans CJK",
-                      sans-serif;
+  --fonts-serif-en: "Noto Serif", "Times New Roman";
+  --fonts-serif-zh: "Noto Serif CJK", SimSun, STSong;
+  --fonts-serif: var(--fonts-serif-en), var(--fonts-serif-zh), serif;
 
-  --fonts-serif: PMingLiu, "Times New Roman",
-                 "Noto Serif CJK", STSong, SimSun,
-                 serif;
-
-  --fonts-mono: "DejaVu Sans Mono", "Liberation Mono", "Noto Sans Mono", "Consolas", "Courier",
-                "Noto Sans Mono CJK",
-                "WenQuanYi Zen Hei Mono",
-                "WenQuanYi Micro Hei Mono",
-                monospace;
+  --fonts-mono-en: "DejaVu Sans Mono", "Noto Sans Mono", "Consolas", "Courier";
+  --fonts-mono-zh: "Noto Sans Mono CJK", "WenQuanYi Zen Hei Mono", "WenQuanYi Micro Hei Mono";
+  --fonts-mono: var(--fonts-mono-en), var(--fonts-mono-zh), monospace;
 
   --color-light-1: #e0e0e0;
   --color-light-2: #e8e8e8;
@@ -57,7 +52,7 @@
 }
 
 html {
-  font-family: var(--fonts-sans-serif);
+  font-family: var(--fonts-sans);
   font-size: 16px;
   color: var(--color-black-3);
 }
