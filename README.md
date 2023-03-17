@@ -2,6 +2,12 @@
 
 This is a theme I personally use.
 
+## Features
+
+- Dark theme support (auto switch by css media query)
+- Muti-Section supports
+- Side card to display recent updated sections
+
 ## Multi Section Supports
 
 If you use multi sections (with the concept from hugo), the RSS at bottom and *Recent* at side are ready for displaying those content. However, you will need to set up your menu at `config.toml` to point the hyperlink to proper destination.
