@@ -1,5 +1,7 @@
 <div class="side-recent">
-    <h2 class="side-title">Recent {{ .Section | humanize }}</h2>
+    <h2 class="side-title">
+        <a href="{{ .RelPermalink }}">Recent {{ .Section | humanize }}</a>
+    </h2>
     <hr />
 
     <ul>
