@@ -7,6 +7,8 @@ This is a theme I personally use.
 - Dark theme support (auto switch by css media query)
 - Muti-Section supports
 - Side card to display recent updated sections
+- Responsive layout
+- Sub-menu support
 
 ## Multi Section Supports
 

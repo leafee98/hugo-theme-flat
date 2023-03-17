@@ -9,7 +9,7 @@ homepage = "https://github.com/leafee98/hugo-theme-flat"
 # If you have a running demo of the theme.
 demosite = "https://leafee98.github.io/hugo-theme-flat/"
 
-tags = ["blog", "personal", "light"]
+tags = ["blog", "personal", "light", "dark", "responsive"]
 features = []
 
 # If the theme has multiple authors
