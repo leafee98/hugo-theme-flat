@@ -50,7 +50,7 @@ pre = "Powered by <a href=\"https://gohugo.io\">Hugo</a>"
 [[params.footer_rows.items]]
 name = "theme flat"
 url = "https://cgit.leafee98.com/hugo-theme-flat.git"
-pre = "Theme <a href=\"https://cgit.leafee98.com/hugo-theme-flat.git\">hugo-theme-flat</a>"
+pre = "Theme <a href=\"https://git.leafee98.com/leafee98/hugo-theme-flat.git\">hugo-theme-flat</a>"
 
 
 [[menus.main]]
