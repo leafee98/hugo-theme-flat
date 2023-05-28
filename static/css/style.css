@@ -84,19 +84,6 @@
   --fonts-mono-zh: "Noto Sans Mono CJK", "WenQuanYi Zen Hei Mono", "WenQuanYi Micro Hei Mono";
   --fonts-mono: var(--fonts-mono-en), var(--fonts-mono-zh), monospace;
 
-  --color-light-1: #e0e0e0;
-  --color-light-2: #e8e8e8;
-  --color-light-3: #f0f0f0;
-  --color-light-4: #f4f4f4;
-  --color-light-5: #fefefe;
-
-  --color-black-0: #909090;
-  --color-black-1: #686868;
-  --color-black-2: #404040;
-  --color-black-3: #282828;
-  --color-black-4: #101010;
-  --color-black-5: #020202;
-
   --color-fav-0: #EDD5DD;
   --color-fav-1: #F0B3B2;
   --color-fav-2: #DE629E;
