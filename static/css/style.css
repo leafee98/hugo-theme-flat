@@ -6,67 +6,75 @@
   --color-light-bg-shadow: #E0E0E0;
   --color-light-fg-font-normal: #4E403E;
   --color-light-fg-font-hover: #555555;
-  --color-light-fg-font-block: #53504D;
   --color-light-fg-font-quote: #57606A;
   --color-light-fg-tiny-line: #e0e0e0;
   --color-light-fg-marker-quote: #BFBFBF;
-  --color-light-fg-hyperlink: #FF5F61;
-  --color-light-fg-hyperlink-hover: #FC3134;
-  --color-light-bg-pager: #000000;
-  --color-light-fg-pager: #000000;
+  --color-light-fg-font-hyper: #4E403E;
+  --color-light-fg-font-hyper-hover: #DE629E;
+  --color-light-fg-hyperlink: #DE629E;
+  --color-light-fg-hyperlink-hover: #CB3E50;
+  --color-light-bg-pager-normal: #D4D4D4;
+  --color-light-bg-pager-current: #E4E4E4;
+  --color-light-bg-pager-hover: #ECECEC;
 }
 
 /* defines dark color */
 :root {
-  --color-dark-bg-page: #2F2F2F;
-  --color-dark-bg-content: #453B3B;
-  --color-dark-bg-block: #4E403E;
+  --color-dark-bg-page: #202124;
+  --color-dark-bg-content: #262628;
+  --color-dark-bg-block: #2B2B2B;
   --color-dark-bg-shadow: #505050;
-  --color-dark-fg-font-normal: #E8E8E8;
-  --color-dark-fg-font-hover: #CECECD;
-  --color-dark-fg-font-block: #E8E8E8;
+  --color-dark-fg-font-normal: #C2C2B6;
+  --color-dark-fg-font-hover: #D2D2D3;
   --color-dark-fg-font-quote: #8B8680;
-  --color-dark-fg-tiny-line: #585858;
+  --color-dark-fg-tiny-line: #3B3B3B;
   --color-dark-fg-marker-quote: #6F6B66;
-  --color-dark-fg-hyperlink: #FF5F61;
-  --color-dark-fg-hyperlink-hover: #FC3134;
-  --color-dark-bg-pager: #000000;
-  --color-dark-fg-pager: #000000;
+  --color-dark-fg-font-hyper: #C2C2B6;
+  --color-dark-fg-font-hyper-hover: #DE629E;
+  --color-dark-fg-hyperlink: #DE629E;
+  --color-dark-fg-hyperlink-hover: #CB3E50;
+  --color-dark-bg-pager-normal: #303030;
+  --color-dark-bg-pager-current: #3A3A3E;
+  --color-dark-bg-pager-hover: #444446;
 }
 
 :root {
-  --color-bg-page:            var(--color-light-bg-page);
-  --color-bg-content:         var(--color-light-bg-content);
-  --color-bg-block:           var(--color-light-bg-block);
-  --color-bg-shadow:          var(--color-light-bg-shadow);
-  --color-fg-font-normal:     var(--color-light-fg-font-normal);
-  --color-fg-font-hover:      var(--color-light-fg-font-hover);
-  --color-fg-font-block:      var(--color-light-fg-font-block);
-  --color-fg-font-quote:      var(--color-light-fg-font-quote);
-  --color-fg-tiny-line:       var(--color-light-fg-tiny-line);
-  --color-fg-marker-quote:    var(--color-light-fg-marker-quote);
-  --color-fg-hyperlink:       var(--color-light-fg-hyperlink);
-  --color-fg-hyperlink-hover: var(--color-light-fg-hyperlink-hover);
-  --color-bg-pager:           var(--color-light-bg-pager);
-  --color-fg-pager:           var(--color-light-fg-pager);
+  --color-bg-page:                  var(--color-light-bg-page);
+  --color-bg-content:               var(--color-light-bg-content);
+  --color-bg-block:                 var(--color-light-bg-block);
+  --color-bg-shadow:                var(--color-light-bg-shadow);
+  --color-fg-font-normal:           var(--color-light-fg-font-normal);
+  --color-fg-font-hover:            var(--color-light-fg-font-hover);
+  --color-fg-font-quote:            var(--color-light-fg-font-quote);
+  --color-fg-tiny-line:             var(--color-light-fg-tiny-line);
+  --color-fg-marker-quote:          var(--color-light-fg-marker-quote);
+  --color-fg-font-hyper:            var(--color-light-fg-font-hyper);
+  --color-fg-font-hyper-hover:      var(--color-light-fg-font-hyper-hover);
+  --color-fg-hyperlink:             var(--color-light-fg-hyperlink);
+  --color-fg-hyperlink-hover:       var(--color-light-fg-hyperlink-hover);
+  --color-bg-pager-normal:          var(--color-light-bg-pager-normal);
+  --color-bg-pager-current:         var(--color-light-bg-pager-current);
+  --color-bg-pager-hover:           var(--color-light-bg-pager-hover);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bg-page:            var(--color-dark-bg-page);
-    --color-bg-content:         var(--color-dark-bg-content);
-    --color-bg-block:           var(--color-dark-bg-block);
-    --color-bg-shadow:          var(--color-dark-bg-shadow);
-    --color-fg-font-normal:     var(--color-dark-fg-font-normal);
-    --color-fg-font-hover:      var(--color-dark-fg-font-hover);
-    --color-fg-font-block:      var(--color-dark-fg-font-block);
-    --color-fg-font-quote:      var(--color-dark-fg-font-quote);
-    --color-fg-tiny-line:       var(--color-dark-fg-tiny-line);
-    --color-fg-marker-quote:    var(--color-dark-fg-marker-quote);
-    --color-fg-hyperlink:       var(--color-dark-fg-hyperlink);
-    --color-fg-hyperlink-hover: var(--color-dark-fg-hyperlink-hover);
-    --color-bg-pager:           var(--color-dark-bg-pager);
-    --color-fg-pager:           var(--color-dark-fg-pager);
+    --color-bg-page:                var(--color-dark-bg-page);
+    --color-bg-content:             var(--color-dark-bg-content);
+    --color-bg-block:               var(--color-dark-bg-block);
+    --color-bg-shadow:              var(--color-dark-bg-shadow);
+    --color-fg-font-normal:         var(--color-dark-fg-font-normal);
+    --color-fg-font-hover:          var(--color-dark-fg-font-hover);
+    --color-fg-font-quote:          var(--color-dark-fg-font-quote);
+    --color-fg-tiny-line:           var(--color-dark-fg-tiny-line);
+    --color-fg-marker-quote:        var(--color-dark-fg-marker-quote);
+    --color-fg-font-hyper:          var(--color-dark-fg-font-hyper);
+    --color-fg-font-hyper-hover:    var(--color-dark-fg-font-hyper-hover);
+    --color-fg-hyperlink:           var(--color-dark-fg-hyperlink);
+    --color-fg-hyperlink-hover:     var(--color-dark-fg-hyperlink-hover);
+    --color-bg-pager-normal:        var(--color-dark-bg-pager-normal);
+    --color-bg-pager-current:       var(--color-dark-bg-pager-current);
+    --color-bg-pager-hover:         var(--color-dark-bg-pager-hover);
   }
 }
 
@@ -83,11 +91,6 @@
   --fonts-mono-en: "DejaVu Sans Mono", "Noto Sans Mono", "Consolas", "Courier";
   --fonts-mono-zh: "Noto Sans Mono CJK", "WenQuanYi Zen Hei Mono", "WenQuanYi Micro Hei Mono";
   --fonts-mono: var(--fonts-mono-en), var(--fonts-mono-zh), monospace;
-
-  --color-fav-0: #EDD5DD;
-  --color-fav-1: #F0B3B2;
-  --color-fav-2: #DE629E;
-  --color-fav-3: #CB3E50;
 
   --len-0: 0.00rem;
   --len-1: 0.25rem;
@@ -307,14 +310,8 @@ body {
 /* beautify hyper link style */
 .footer { color: var(--color-fg-font-normal) }
 
-.footer a       { color: var(--color-fav-2); text-decoration: none; }
-.footer a:hover { color: var(--color-fav-3); }
-
-.footer img {
-    display: inline;
-    height: var(--font-size-1);
-    color: var(--color-fav-2);
-}
+.footer a       { color: var(--color-fg-hyperlink); text-decoration: none; }
+.footer a:hover { color: var(--color-fg-hyperlink-hover); }
 
 /**********************************/
 /* set up home page's list layout */
@@ -335,8 +332,8 @@ body {
 
 .list-item .title a { text-decoration: none; color: var(--color-fg-font-normal); }
 .list-item .title a:hover { color: var(--color-fg-font-hover); }
-.list-item .tips a { text-decoration: none; color: var(--color-fav-2) }
-.list-item .tips a:hover { color: var(--color-fav-3) }
+.list-item .tips a { text-decoration: none; color: var(--color-fg-hyperlink); }
+.list-item .tips a:hover { color: var(--color-fg-hyperlink-hover); }
 
 .list-item .title { margin: var(--len-2) 0 var(--len-3) 0; }
 
@@ -380,7 +377,7 @@ body {
 .side > *:last-child { margin-bottom: 0; }
 
 .side a       { color: var(--color-fg-font-normal); text-decoration: none; }
-.side a:hover { color: var(--color-fav-2); }
+.side a:hover { color: var(--color-fg-hyperlink); }
 
 /* horizontally place tags */
 .side .side-tags li { display: inline-block; margin: var(--len-1) var(--len-1); }
@@ -395,8 +392,8 @@ body {
   align-items: center;
 }
 
-.single a { text-decoration: none; color: var(--color-fav-2); }
-.single a:hover { color: var(--color-fav-3); }
+.single a { text-decoration: none; color: var(--color-fg-hyperlink); }
+.single a:hover { color: var(--color-fg-hyperlink-hover); }
 
 .single .title,
 .single .tip,
@@ -408,7 +405,7 @@ body {
 
 .single > hr {
   border: none;
-  background-color: var(--color-fav-1);
+  background-color: var(--color-fg-tiny-line);
   height: 1px;
 
   width: 90%;
@@ -546,7 +543,6 @@ body {
 }
 .content .anchor {
   visibility: hidden;
-  color: var(--color-fav-2);
 }
 .content h1:hover a,
 .content h2:hover a,
@@ -593,8 +589,8 @@ body {
 
 #archive .group .value a { text-decoration: none; }
 
-#archive .group .value a { color: var(--color-fg-font-normal); }
-#archive .group .value a:hover { color: var(--color-fav-2); }
+#archive .group .value a { color: var(--color-fg-font-hyper); }
+#archive .group .value a:hover { color: var(--color-fg-font-hyper-hover); }
 
 #archive .group .value .tags {
   display: inline-block;
@@ -671,17 +667,17 @@ body {
   text-decoration: none;
 
   color: var(--color-fg-font-normal);
-  background-color: var(--color-fg-hyperlink-hover);
+  background-color: var(--color-bg-pager-normal);
 
   transition: background-color 0.25s;
 }
 
 .pagination a:hover {
-  background-color: var(--color-fav-0);
+  background-color: var(--color-bg-pager-hover);
 }
 
 .pagination a.current {
-  background-color: var(--color-fav-1);
+  background-color: var(--color-bg-pager-current);
   pointer-events: none;
   color: var(--color-fg-font-normal);
   cursor: default;
@@ -707,7 +703,7 @@ body {
 
 .archive-hint {
   padding-left: var(--len-4);
-  color: var(--color-fav-1);
+  color: var(--color-fg-font-quote);
 }
 
 .max-wrapper {

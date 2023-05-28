@@ -3,7 +3,7 @@ theme = "hugo-theme-flat"
 themesDir = "../.."
 enableRobotsTXT = true
 hasCJKLanguage = true
-paginate = 6
+paginate = 4
 baseURL = ""
 
 # these values are hugo built in markup config
