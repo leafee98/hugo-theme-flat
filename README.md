@@ -1,4 +1,4 @@
-# hugo-theme-blank
+# hugo-theme-flat
 
 This is a theme I personally use.
 
