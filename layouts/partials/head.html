@@ -1,6 +1,37 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,minimum-scale=1">
 
+
+{{ $title := .Site.Title -}}
+{{ if .Params.Title -}}
+    {{ $title = printf "%s | %s" .Params.Title $title -}}
+{{ end -}}
+
+{{ $description := "" -}}
+{{ if .IsHome -}}
+    {{ with .Site.Params.description }}{{ $description = . }}{{ end -}}
+{{ else if .IsPage -}}
+    {{ if .Description -}}
+        {{ $description = .Description -}}
+    {{ else -}}
+        {{ $description = .Summary -}}
+    {{ end -}}
+{{ end }}
+
+<title>{{ $title }}</title>
+<link rel="canonical" href="{{ .Permalink }}">
+{{ if $description -}}
+    <meta name="description" content="{{ $description }}" />
+{{ end -}}
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="{{ $title }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+{{ if $description -}}
+    <meta property="og:description" content="{{ $description }}" />
+{{ end -}}
+
+
 {{ range .AlternativeOutputFormats -}}
     {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
 {{ end -}}

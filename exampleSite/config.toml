@@ -22,6 +22,7 @@ style = 'monokailight'
 tabWidth = 4
 
 [params]
+description = "Example site for hugo-theme-flat"
 mainSections = ['posts']
 
 ## uncomment belows and set proper values to enable remark42
