@@ -259,10 +259,6 @@ body {
   align-items: flex-start;
 }
 
-/* remove the unwanted default css in menus */
-.header ul { list-style: none; margin: 0; padding: 0; }
-.header li { list-style: none; }
-
 /* set up spacing of menu items in menu and sub-menu */
 .header .menu > *            { margin-right: var(--len-3); }
 .header .menu > *:last-child { margin-right: 0; }

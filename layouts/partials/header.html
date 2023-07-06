@@ -2,21 +2,21 @@
     <div class="header">
         <a class="site-title" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
 
-        <ul class="menu">
+        <nav class="menu">
             {{ range .Site.Menus.main }}
-                <li class="menu-item">
+                <div class="menu-item">
                     {{ if not .Children }}
                         <a href="{{ .URL }}">{{ .Name }}</a>
                     {{ else }}
                         <a>{{ .Name }}↓</a>
-                        <ul class="sub-menu">
+                        <nav class="sub-menu">
                             {{ range .Children }}
-                            <li class="menu-item"><a href="{{ .URL }}">{{ .Name }}</a></li>
+                            <div class="menu-item"><a href="{{ .URL }}">{{ .Name }}</a></div>
                             {{ end }}
-                        </ul>
+                        </nav>
                     {{ end }}
-                </li>
+                </div>
             {{ end }}
-        </ul>
+        </nav>
     </div>
 </header>
