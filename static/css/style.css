@@ -150,6 +150,7 @@ body {
 .main { flex: 0 0 72%; width: 72%; }
 .side { flex: 0 0 28%; width: 28%; }
 
+/* mobile layout: place side to bottom */
 @media (max-width: 991px) {
   .main { padding: var(--len-4); }
   .side { padding-left: 0; padding-top: var(--len-4); }
@@ -183,8 +184,7 @@ body {
 
 /********** set up break point **********/
 
-                             .main-wrapper, .header { max-width: 1320px; }
-@media (max-width: 1399px) { .main-wrapper, .header { max-width: 1140px; } }
+                             .main-wrapper, .header { max-width: 1140px; }
 @media (max-width: 1199px) { .main-wrapper, .header { max-width: 960px; } }
 @media (max-width: 991px)  { .main-wrapper, .header { max-width: 720px; } }
 @media (max-width: 767px)  { .main-wrapper, .header { max-width: 540px; } }
