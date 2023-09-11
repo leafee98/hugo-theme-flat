@@ -32,7 +32,13 @@
                     {{ end }}
                 </div>
 
-                <div class="summary">{{ .Summary }}</div>
+                <div class="summary">
+                    {{ with .Description }}
+                        {{ . }}
+                    {{ else }}
+                        {{ .Summary }}
+                    {{ end }}
+                </div>
             </section>
         {{ end }}
 
