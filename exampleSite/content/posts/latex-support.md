@@ -9,7 +9,8 @@ katex: true
 draft: false
 ---
 
-This article contians some test for latex support. Currently the lib used for rendering LaTeX is [\\(\KaTeX\\)](https://katex.org/)
+This article contians some test for latex support.
+Currently the lib used for rendering LaTeX is [\\(\KaTeX\\)](https://katex.org/)
 
 <!--more-->
 
@@ -20,7 +21,8 @@ $$
 ## The code which render the above
 
 ```
-This article contians some test for latex support. Currently the lib used for rendering LaTeX is [\\(\KaTeX\\)](https://katex.org/)
+This article contians some test for latex support.
+Currently the lib used for rendering LaTeX is [\\(\KaTeX\\)](https://katex.org/)
 
 $$
 \pi=\int_{-\infty}^\infty\frac{dx}{1+x^2}
