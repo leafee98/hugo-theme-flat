@@ -51,7 +51,7 @@
 
     <!-- To automatically render math in text elements, include the auto-render extension: -->
     <script defer src="{{ "lib/katex/contrib/auto-render.min.js" | relURL }}"
-        onload="renderMathInElement(document.body);"></script>
+        onload="renderMathInElement(document.querySelector('body .single .content'));"></script>
 {{ end }}
 
 {{ with and .Site.Params.remark42 .Params.show_comments }}
