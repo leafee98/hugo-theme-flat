@@ -3,8 +3,10 @@ theme = "hugo-theme-flat"
 themesDir = "../.."
 enableRobotsTXT = true
 hasCJKLanguage = true
-paginate = 4
 baseURL = ""
+
+[pagination]
+pagerSize = 4
 
 # these values are hugo built in markup config
 [markup.highlight]
