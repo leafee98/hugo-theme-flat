@@ -10,6 +10,16 @@ This is a theme I personally use.
 - Responsive layout
 - Sub-menu support
 
+## Dark & Light Theme Support
+
+By default, dark or light theme will be set according to CSS media query. You can for default light or dark theme as well as add a user-side theme toggle button by adding the following parameters to your config file.
+
+```toml
+[params]
+themeMode = "auto" # sets default theme, options are "auto", "dark", or "light"
+themeToggle = false # sets presence of theme toggle, options are "true" or "false"
+```
+
 ## Multi Section Supports
 
 If you use multi sections (with the concept from hugo), the RSS at bottom and *Recent* at side are ready for displaying those content. However, you will need to set up your menu at `config.toml` to point the hyperlink to proper destination.

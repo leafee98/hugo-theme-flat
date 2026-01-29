@@ -26,6 +26,8 @@ tabWidth = 4
 [params]
 description = "Example site for hugo-theme-flat"
 mainSections = ['posts']
+themeMode = "auto" # sets default theme, options are "auto", "dark", or "light"
+themeToggle = false # sets presence of theme toggle, options are "true" or "false"
 
 ## uncomment belows and set proper values to enable remark42
 # [params.remark42]
@@ -36,7 +38,6 @@ mainSections = ['posts']
 # locale='en'
 # show_email_subscription=false
 # simple_view=true
-
 
 # you can set multi row of footers like these
 [[params.footer_rows]]
