@@ -26,6 +26,7 @@ tabWidth = 4
 [params]
 description = "Example site for hugo-theme-flat"
 mainSections = ['posts']
+postPreview = true
 
 ## uncomment belows and set proper values to enable remark42
 # [params.remark42]
