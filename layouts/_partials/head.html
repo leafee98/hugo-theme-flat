@@ -77,4 +77,6 @@
 <link rel="stylesheet" href="{{ "css/style.css" | relURL }}" />
 <script src="{{ "js/copy-code-block.js" | relURL }}"></script>
 <link rel="shortcut icon" href="{{ "images/favicon.ico" | relURL }}" type="image/x-icon" />
+{{ if .Site.Params.themeToggle }}
 <script src="{{ "js/theme-toggle.js" | relURL }}"></script>
+{{ end }}

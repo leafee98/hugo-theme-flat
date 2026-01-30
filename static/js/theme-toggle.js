@@ -1,42 +1,52 @@
 function initThemeToggle() {
-  const html = document.documentElement;
-  const button = document.getElementById("theme-toggle");
-  const icon = button.querySelector(".theme-icon");
+  const menuNav = document.querySelector("nav.menu");
+  if (!menuNav) return;
 
-  // Get saved preference or current theme
+  // Create button
+  const button = document.createElement("button");
+  button.id = "theme-toggle";
+  button.className = "menu-item theme-toggle-btn";
+  button.setAttribute("aria-label", "Toggle theme");
+
+  const icon = document.createElement("span");
+  icon.className = "theme-icon";
+  button.appendChild(icon);
+
+  menuNav.appendChild(button);
+
+  const html = document.documentElement;
+
   function getCurrentTheme() {
+    // Check localStorage FIRST
     const saved = localStorage.getItem("themeMode");
     if (saved) return saved;
 
-    // Check current class (set by Hugo)
+    // Then check Hugo-set class
     if (html.classList.contains("theme-light")) return "light";
     if (html.classList.contains("theme-dark")) return "dark";
-    return "light"; // fallback
+    return "light";
   }
 
-  // Apply theme and update icon
-  function applyTheme(theme) {
-    html.classList.remove("theme-light", "theme-dark");
-    html.classList.add("theme-" + theme);
-
-    updateIcon(theme);
-    localStorage.setItem("themeMode", theme);
-  }
-
-  // Update icon to match current theme
   function updateIcon(theme) {
     icon.textContent = theme === "dark" ? "🌙" : "☀️";
   }
 
-  // Toggle: light ↔ dark
+  function applyTheme(theme) {
+    html.classList.remove("theme-light", "theme-dark");
+    html.classList.add("theme-" + theme);
+    updateIcon(theme);
+    localStorage.setItem("themeMode", theme);
+  }
+
+  // Apply saved preference immediately on load
+  const currentTheme = getCurrentTheme();
+  applyTheme(currentTheme);
+
   button.addEventListener("click", () => {
     const current = getCurrentTheme();
     const next = current === "light" ? "dark" : "light";
     applyTheme(next);
   });
-
-  // Set initial icon
-  updateIcon(getCurrentTheme());
 }
 
 document.addEventListener("DOMContentLoaded", initThemeToggle);
