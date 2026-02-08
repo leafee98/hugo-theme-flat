@@ -78,6 +78,44 @@
   }
 }
 
+html.theme-light:root {
+  --color-bg-page:                  var(--color-light-bg-page);
+  --color-bg-content:               var(--color-light-bg-content);
+  --color-bg-block:                 var(--color-light-bg-block);
+  --color-bg-shadow:                var(--color-light-bg-shadow);
+  --color-fg-font-normal:           var(--color-light-fg-font-normal);
+  --color-fg-font-hover:            var(--color-light-fg-font-hover);
+  --color-fg-font-quote:            var(--color-light-fg-font-quote);
+  --color-fg-tiny-line:             var(--color-light-fg-tiny-line);
+  --color-fg-marker-quote:          var(--color-light-fg-marker-quote);
+  --color-fg-font-hyper:            var(--color-light-fg-font-hyper);
+  --color-fg-font-hyper-hover:      var(--color-light-fg-font-hyper-hover);
+  --color-fg-hyperlink:             var(--color-light-fg-hyperlink);
+  --color-fg-hyperlink-hover:       var(--color-light-fg-hyperlink-hover);
+  --color-bg-pager-normal:          var(--color-light-bg-pager-normal);
+  --color-bg-pager-current:         var(--color-light-bg-pager-current);
+  --color-bg-pager-hover:           var(--color-light-bg-pager-hover);
+}
+
+html.theme-dark:root {
+  --color-bg-page:                var(--color-dark-bg-page);
+  --color-bg-content:             var(--color-dark-bg-content);
+  --color-bg-block:               var(--color-dark-bg-block);
+  --color-bg-shadow:              var(--color-dark-bg-shadow);
+  --color-fg-font-normal:         var(--color-dark-fg-font-normal);
+  --color-fg-font-hover:          var(--color-dark-fg-font-hover);
+  --color-fg-font-quote:          var(--color-dark-fg-font-quote);
+  --color-fg-tiny-line:           var(--color-dark-fg-tiny-line);
+  --color-fg-marker-quote:        var(--color-dark-fg-marker-quote);
+  --color-fg-font-hyper:          var(--color-dark-fg-font-hyper);
+  --color-fg-font-hyper-hover:    var(--color-dark-fg-font-hyper-hover);
+  --color-fg-hyperlink:           var(--color-dark-fg-hyperlink);
+  --color-fg-hyperlink-hover:     var(--color-dark-fg-hyperlink-hover);
+  --color-bg-pager-normal:        var(--color-dark-bg-pager-normal);
+  --color-bg-pager-current:       var(--color-dark-bg-pager-current);
+  --color-bg-pager-hover:         var(--color-dark-bg-pager-hover);
+}
+
 :root {
   --fonts-sans-en: "Noto Sans", "Droid Sans", "Calibri", "Arial";
   --fonts-sans-zh: "WenQuanYi Zen Hei", "WenQuanYi Micro Hei",
@@ -708,6 +746,23 @@ pre .copyCodeButton:hover {
 
 .commenting {
   width: 85%;
+}
+
+/***************************/
+/* theme toggle properties */
+/***************************/
+
+.theme-toggle-btn {
+  background: none;
+  border: 2px solid var(--color-fg-font-normal);
+  padding: 6px 6px;
+  cursor: pointer;
+  font-size: 1.2em;
+  border-radius: 8px;
+}
+
+.theme-toggle-btn:hover {
+  opacity: 0.7;
 }
 
 /**********/

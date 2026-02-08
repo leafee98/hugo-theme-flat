@@ -26,6 +26,10 @@ tabWidth = 4
 [params]
 description = "Example site for hugo-theme-flat"
 mainSections = ['posts']
+themeMode = "auto" # sets default theme, options are "auto", "dark", or "light"
+themeToggle = false # sets presence of theme toggle, options are "true" or "false"
+# Whether to display post summary on the home post list
+postPreview = true
 showPublishDate = true
 showWordCount = true
 showReadingTime = true
@@ -39,7 +43,6 @@ showReadingTime = true
 # locale='en'
 # show_email_subscription=false
 # simple_view=true
-
 
 # you can set multi row of footers like these
 [[params.footer_rows]]

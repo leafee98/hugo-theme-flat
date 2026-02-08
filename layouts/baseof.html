@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="theme-{{ .Site.Params.themeMode | default "auto" }}">
     <head>
         {{ partial "head.html" . }}
     </head>
@@ -14,8 +14,12 @@
                 {{ range .Site.Sections }}
                     {{ partial "side-recent.html" . }}
                 {{ end }}
-                {{ partial "side-categories.html" . }}
-                {{ partial "side-tags.html" . }}
+                {{ if .Site.Taxonomies.categories }}
+                    {{ partial "side-categories.html" . }}
+                {{ end }}
+                {{ if .Site.Taxonomies.tags }}
+                    {{ partial "side-tags.html" . }}
+                {{ end }}
             </div>
         </main>
         {{ partial "footer.html" . }}
