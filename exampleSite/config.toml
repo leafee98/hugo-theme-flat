@@ -27,9 +27,8 @@ tabWidth = 4
 description = "Example site for hugo-theme-flat"
 mainSections = ['posts']
 themeMode = "auto" # sets default theme, options are "auto", "dark", or "light"
-themeToggle = false # sets presence of theme toggle, options are "true" or "false"
-# Whether to display post summary on the home post list
-postPreview = true
+themeToggle = true # sets presence of theme toggle, options are "true" or "false"
+postPreview = true # whether to display post summary on the home post list
 showPublishDate = true
 showWordCount = true
 showReadingTime = true
