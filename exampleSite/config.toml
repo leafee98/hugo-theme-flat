@@ -26,6 +26,7 @@ tabWidth = 4
 [params]
 description = "Example site for hugo-theme-flat"
 mainSections = ['posts']
+# Whether to display post summary on the home post list
 postPreview = true
 
 ## uncomment belows and set proper values to enable remark42
