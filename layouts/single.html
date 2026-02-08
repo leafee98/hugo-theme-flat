@@ -11,17 +11,17 @@
         <time datetime="{{ .PublishDate }}">{{ .PublishDate.Format "2006/01/02" }}</time>
         {{ end }}
         {{ if $showWordCount }}
-        {{ if $showPublishDate }}
-        <span class="split">·</span>
-        {{ end }}
-        <span> {{ .WordCount }} words </span>
+            {{ if $showPublishDate }}
+                <span class="split">·</span>
+            {{ end }}
+            <span> {{ .WordCount }} words </span>
         {{ end }}
         {{ if $showReadingTime }}
-        {{ if or $showPublishDate $showWordCount }}
-        <span class="split">·</span>
+            {{ if or $showPublishDate $showWordCount }}
+                <span class="split">·</span>
+            {{ end }}
+            <span> {{ .ReadingTime }} minutes to read </span>
         {{ end }}
-        <span> {{ .ReadingTime }} minutes to read </span>
-        {{end}}
     </div>
 
     <div class="taxonomies">
