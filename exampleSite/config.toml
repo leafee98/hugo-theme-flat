@@ -28,6 +28,8 @@ description = "Example site for hugo-theme-flat"
 mainSections = ['posts']
 themeMode = "auto" # sets default theme, options are "auto", "dark", or "light"
 themeToggle = false # sets presence of theme toggle, options are "true" or "false"
+# Whether to display post summary on the home post list
+postPreview = true
 
 ## uncomment belows and set proper values to enable remark42
 # [params.remark42]
