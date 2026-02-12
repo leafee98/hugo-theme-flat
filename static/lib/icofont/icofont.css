@@ -1,8 +1,8 @@
 /*! 
 * @package IcoFont 
 * @version 1.0.1 
-* @author IcoFont https://icofont.com 
-* @copyright Copyright (c) 2015 - 2022 IcoFont 
+* @author   
+* @copyright 2026 
 * @license - https://icofont.com/license/
 */
 
@@ -36,6 +36,41 @@ url("./fonts/icofont.woff") format("woff");
 .icofont-rss:before
 {
   content: "\ed64";
+}
+
+.icofont-eclipse:before
+{
+  content: "\ee54";
+}
+
+.icofont-sun:before
+{
+  content: "\ee81";
+}
+
+.icofont-night:before
+{
+  content: "\ee66";
+}
+
+[class^="icofont-"].icofont-duotone,
+	[class*=" icofont-"].icofont-duotone
+{
+  position: relative;
+}
+
+[class^="icofont-"].icofont-duotone:before,
+	[class*=" icofont-"].icofont-duotone:before
+{
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+[class^="icofont-"].icofont-duotone:after,
+	[class*=" icofont-"].icofont-duotone:after
+{
+  opacity: 0.4;
 }
 
 .icofont-xs
@@ -260,28 +295,5 @@ url("./fonts/icofont.woff") format("woff");
 .icofont-inverse
 {
   color: #fff;
-}
-
-.sr-only
-{
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
-.sr-only-focusable:active,
-	.sr-only-focusable:focus
-{
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto;
 }
 	

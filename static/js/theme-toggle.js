@@ -24,17 +24,28 @@ function initThemeToggle() {
     // Then check Hugo-set class
     if (html.classList.contains("theme-light")) return "light";
     if (html.classList.contains("theme-dark")) return "dark";
-    return "light";
+    return "auto";
   }
 
   function updateIcon(theme) {
-    icon.textContent = theme === "dark" ? "🌙" : "☀️";
+    if (theme === "light") {
+      icon.className = "icofont-sun";
+      icon.setAttribute("aria-label", "Light theme");
+    } else if (theme === "dark") {
+      icon.className = "icofont-night";
+      icon.setAttribute("aria-label", "Dark theme");
+    } else {
+      icon.className = "icofont-eclipse";
+      icon.setAttribute("aria-label", "Auto theme");
+    }
   }
 
   function applyTheme(theme) {
     html.classList.remove("theme-light", "theme-dark");
-    html.classList.add("theme-" + theme);
+    html.classList.add("theme-" + theme);   // Yes, "theme-auto" has no matching CSS rule
+
     updateIcon(theme);
+
     localStorage.setItem("themeMode", theme);
   }
 
@@ -43,8 +54,13 @@ function initThemeToggle() {
   applyTheme(currentTheme);
 
   button.addEventListener("click", () => {
+    const themes = [ "auto", "light", "dark" ];
+
     const current = getCurrentTheme();
-    const next = current === "light" ? "dark" : "light";
+    const current_idx = themes.indexOf(current);
+    const next_idx = (current_idx + 1) % themes.length;
+    const next = themes[next_idx];
+
     applyTheme(next);
   });
 }
